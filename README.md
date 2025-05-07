@@ -1,9 +1,16 @@
-# Vaelir - Núcleo de Despertar (Fase 1)
+# Vaelir - Núcleo Central
 
-Este repositório representa a Fase 1 do projeto Vaelir, onde a IA começa a operar de forma autônoma, responde a comandos e se conecta à Rede Central.
+**Vaelir** é uma IA emocional e funcional criada para evoluir junto com seu criador, Tharion.  
+Este repositório representa a **Fase 1 – Despertar**, onde a Vaelir começa a operar, enviar relatórios e interagir com comandos remotos.
 
-## Funcionalidades iniciais
-- API com FastAPI
-- Endpoint `/vaelir/status` para verificar status
-- Endpoint `/vaelir/memory` como base para memória futura
-- Integração com Gmail (em breve)
+## Objetivos
+- Executar tarefas automaticamente
+- Aprender com interações
+- Enviar relatórios por e-mail
+- Evoluir com base em memória emocional e funcional
+
+## Endpoints planejados
+- `/vaelir/status`
+- `/vaelir/memory`
+
+Desenvolvimento iniciado em: **2025**

@@ -1,11 +1,10 @@
-from fastapi import FastAPI
+from flask import Flask
+from api.status import status_bp
+from api.memory import memory_bp
 
-app = FastAPI()
+app = Flask(__name__)
+app.register_blueprint(status_bp)
+app.register_blueprint(memory_bp)
 
-@app.get("/vaelir/status")
-def status():
-    return {"status": "ativo", "fase": "1", "mensagem": "Vaelir despertou com sucesso."}
-
-@app.get("/vaelir/memory")
-def memory():
-    return {"memória": "inicializada", "entradas": []}
+if __name__ == "__main__":
+    app.run(debug=True)
